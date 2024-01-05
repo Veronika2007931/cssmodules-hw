@@ -1,5 +1,5 @@
 import data from "../data.json"
-
+import { StatisticsInfo } from "./StatisticsInfo";
 
 
 export function Statistics(){
@@ -8,7 +8,7 @@ export function Statistics(){
             <h2 class="title">Upload stats</h2>
             <ul class="stat-list">
            { data.map(({id, lable, percentage})=>{
-               return <Statistics
+               return <StatisticsInfo
                key={id}
                lable={lable}
                percentage={percentage}

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function Statistics({id, lable, percentage}){
+export function StatisticsInfo({id, lable, percentage}){
    
        return(
     
@@ -13,7 +13,7 @@ export function Statistics({id, lable, percentage}){
         } 
 
         
-Statistics.propTypes = {
+StatisticsInfo.propTypes = {
     id: PropTypes.string,
     lable: PropTypes.string,
     percentage: PropTypes.number
