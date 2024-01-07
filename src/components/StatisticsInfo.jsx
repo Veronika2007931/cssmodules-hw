@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import s from "./Statistics.module.css"
 
-export function StatisticsInfo({id, lable, percentage}){
+export function StatisticsInfo({id, label, percentage}){
    
        return(
     
-              <li class="item">
-                <span class="label">{lable}</span>
-                <span class="percentage">{percentage}</span>
+              <li className={s.item}>
+                <span className={s.label}>{label}</span>
+                <span className={s.percentage}>{percentage}</span>
               </li>
             ) 
         } 

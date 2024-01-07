@@ -1,4 +1,4 @@
-
+import s from "./FriendList.module.css"
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
 
 export function FriendListInfo({avatar, name, isOnline}){
      return(
-            <li class="item">
-  <span class="status">{isOnline}</span>
-  <img class="avatar" src={avatar} alt="User avatar" width="48" />
-  <p class="name">{name}</p>
+            <li className={s.item}>
+  <span className={s.status}>{isOnline}</span>
+  <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
+  <p className={s.name}>{name}</p>
 </li>
         )}
  
